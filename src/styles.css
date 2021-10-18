@@ -125,3 +125,11 @@ main .blog .more .details {
 main .blog .more .details p {
   margin: 5px;
 }
+
+footer {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #8f95b6;
+}
