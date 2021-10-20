@@ -37,21 +37,19 @@ main .welcome {
   align-items: center;
 }
 
-main .welcome h1 {
+main .welcome h2 {
   font-size: 25px;
   font-weight: 400;
-}
-
-main .welcome .text-gradient {
   background-color: #000;
   background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
 
-main .welcome p {
+main .welcome h1 {
   font-size: 28px;
   width: 70%;
   font-weight: 500;
@@ -66,10 +64,6 @@ main .blog {
   align-items: flex-start;
 }
 
-main .blog h3 {
-  font-weight: 400;
-}
-
 main .blog .article {
   display: flex;
   flex-direction: column;
@@ -82,13 +76,17 @@ main .blog .article + .article {
   margin-top: 70px;
 }
 
+main .blog h3 {
+  font-weight: 400;
+}
+
 main .blog .more {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-main .blog .more .details {
+.tag {
   padding: 0 10px;
   margin-right: 20px;
   border: 1px solid #8f95b6;
@@ -96,49 +94,51 @@ main .blog .more .details {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: default;
 }
 
-main .blog .more .details svg {
+.tag svg {
   margin-right: 8px;
   fill: #8f95b6;
 }
 
-main .blog .article-1 .more .details:first-of-type svg {
+.tag.care svg {
   width: 15px;
   position: relative;
   top: 1px;
 }
 
-main .blog .article-2 .more .details:first-of-type svg {
+.tag.beauty svg {
   width: 17px;
   position: relative;
   top: 2px;
 }
 
-main .blog .article-3 .more .details:first-of-type svg {
+.tag.astro svg {
   width: 17px;
 }
 
-main .blog .article .more .details:nth-of-type(2) svg {
-  width: 18px;
-}
-
-main .blog .more .details p {
+main .blog .more .tag span {
   margin: 5px 0;
-}
-
-.line {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
 }
 
 footer {
   height: 90px;
   padding: 10px 30px 0 30px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
 }
 
 footer .footer-details {
