@@ -199,7 +199,7 @@ main .blog .more {
 }
 
 @media (min-width: 768px) {
-  .tag {
+  .tag:first-of-type {
     margin-bottom: 0;
   }
 }
