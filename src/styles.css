@@ -21,7 +21,7 @@ a:hover {
 }
 
 main {
-  padding: 30px 0 50px 10px;
+  padding: 30px 10px 50px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +36,6 @@ main {
 }
 
 main .welcome {
-  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +44,6 @@ main .welcome {
 
 @media (min-width: 768px) {
   main .welcome {
-    width: auto;
     align-items: center;
   }
 }
@@ -70,7 +68,7 @@ main .welcome h2 {
 }
 
 main .welcome h1 {
-  width: 290px;
+  width: 100%;
   font-weight: 500;
   text-align: left;
   font-size: 18px;
@@ -86,19 +84,18 @@ main .welcome h1 {
 
 @media (min-width: 1024px) {
   main .welcome h1 {
-    width: 910px;
+    width: 800px;
   }
 }
 
 @media (min-width: 1440px) {
   main .welcome h1 {
-    width: 930px;
     font-size: 28px;
   }
 }
 
 main .blog {
-  width: 300px;
+  width: 100%;
   padding-top: 35px;
   display: flex;
   flex-direction: column;
@@ -115,7 +112,7 @@ main .blog {
 
 @media (min-width: 1024px) {
   main .blog {
-    width: auto;
+    width: 750px;
   }
 }
 
@@ -130,6 +127,7 @@ main .blog {
 }
 
 main .blog .article {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,22 +160,21 @@ main .blog h3 {
 
 @media (min-width: 1440px) {
   main .blog h3 {
-    font-size: auto;
     font-weight: 400;
   }
 }
 
 main .blog .more {
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
   main .blog .more {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
   }
@@ -185,23 +182,13 @@ main .blog .more {
 
 .tag {
   padding: 0 10px;
-  margin-right: 20px;
+  margin: 10px 20px 0px 0px;
   border: 1px solid #8f95b6;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: default;
-}
-
-.tag:first-of-type {
-  margin-bottom: 10px;
-}
-
-@media (min-width: 768px) {
-  .tag:first-of-type {
-    margin-bottom: 0;
-  }
 }
 
 .tag svg {
@@ -341,7 +328,7 @@ footer .github a svg {
 }
 
 footer .social-media {
-  width: 80%;
+  width: 256px;
   display: flex;
   justify-content: space-between;
   align-items: center;
