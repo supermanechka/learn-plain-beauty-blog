@@ -21,7 +21,7 @@ a:hover {
 }
 
 main {
-  padding: 30px 10px 50px 10px;
+  padding: 20px 15px 50px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +50,6 @@ main .welcome {
 
 main .welcome h2 {
   font-size: 15px;
-  line-height: 20px;
   font-weight: 400;
   background-color: #000;
   background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
@@ -64,7 +63,6 @@ main .welcome h2 {
 @media (min-width: 768px) {
   main .welcome h2 {
     font-size: 25px;
-    line-height: 30px;
     text-align: center;
   }
 }

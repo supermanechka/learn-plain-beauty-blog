@@ -37,6 +37,20 @@ main .welcome {
   width: 100%;
 }
 
+main .welcome h1 {
+  margin-top: 30px;
+}
+
+main .welcome h2 {
+  font-size: 25px;
+}
+
+@media (min-width: 678px) {
+  main .welcome h2 {
+    font-size: 25px;
+  }
+}
+
 main .main-text {
   width: 100%;
   margin-bottom: 30px;
@@ -102,10 +116,11 @@ main .main-text p {
 }
 
 main .more {
-  width: 290px;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
