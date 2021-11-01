@@ -93,7 +93,7 @@ main .main-text h3 {
 
 @media (min-width: 1024px) {
   main .main-text h3 {
-    margin: 90px 0 0 0;
+    margin: 60px 0 0 0;
   }
 }
 
@@ -144,4 +144,99 @@ main .more {
 
 main .more .tag span {
   margin: 5px 0;
+}
+
+main .callout {
+  width: 90%;
+  padding: 20px 15px;
+  margin: 30px 0;
+  background-color: #f1f1ef;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  main .callout {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .callout {
+    width: 820px;
+  }
+}
+
+@media (min-width: 1440px) {
+  main .callout {
+    width: 970px;
+  }
+}
+
+main .callout p {
+  text-align: left;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  main .callout p {
+    width: 90%;
+  }
+}
+
+main .callout .tag.highlight {
+  margin: 5px 0 0 0px;
+  padding: 0;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  main .callout .tag.highlight {
+    margin: 25px 0 0 5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  main .callout .tag.highlight {
+    margin: 25px 0 0 20px;
+  }
+}
+
+main .callout .tag.highlight svg {
+  width: 20px;
+}
+
+@media (min-width: 1440px) {
+  main .callout .tag.highlight svg {
+    width: 25px;
+  }
+}
+
+main li {
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+@media (min-width: 1440px) {
+  main li {
+    font-size: 21px;
+  }
+}
+
+main ol {
+  width: 80%;
+  margin: 5px 0;
+}
+
+@media (min-width: 1440px) {
+  main ol {
+    margin: 5px 0;
+  }
 }
